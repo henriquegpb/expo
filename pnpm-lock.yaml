@@ -178,6 +178,7 @@ packageExtensionsChecksum: sha256-eD4yymvxCeqwks3aaDOCcechfJIjdW9wKz4McqQyjJc=
 patchedDependencies:
   '@react-native-community/netinfo': ced0cb79848978ecc3e780a4d812d948684346cce85aa5d06f6b91a11e10ad5b
   react-native-reanimated: 0f735c4b33f9af576a7af1a9cffcea5220cbbc671ec2f158848cdd086d73d5e4
+  react-native-web: 9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a
   react-native-worklets: 0e7ca08ddb565252ea4479e4bb493c5c09756297ba0ec8845126edcfcc981b28
   react-server-dom-webpack: ba3362195bbec23b932749a969f0231184584999e30a5859dae27748b974c24a
 
@@ -559,7 +560,7 @@ importers:
         version: 4.27.0(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
       react-native-web:
         specifier: file:../../../tarballs/react-native-web-0.21.2-c25db77d.tgz
-        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       react-native-worklets:
         specifier: 0.12.2
         version: 0.12.2(patch_hash=0e7ca08ddb565252ea4479e4bb493c5c09756297ba0ec8845126edcfcc981b28)(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
@@ -834,7 +835,7 @@ importers:
         version: 1.22.4(react-native-reanimated@4.6.0(patch_hash=0f735c4b33f9af576a7af1a9cffcea5220cbbc671ec2f158848cdd086d73d5e4)(react-native-worklets@0.12.2(patch_hash=0e7ca08ddb565252ea4479e4bb493c5c09756297ba0ec8845126edcfcc981b28)(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
       react-native-maps:
         specifier: 1.29.0
-        version: 1.29.0(react-native-web@0.21.2(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
+        version: 1.29.0(react-native-web@0.21.2(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
       react-native-pager-view:
         specifier: 9.0.4
         version: 9.0.4(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
@@ -918,7 +919,7 @@ importers:
         version: 0.88.0-rc.1(@babel/core@7.29.7)(@types/react@19.3.0)(react@19.3.0)
       react-native-web:
         specifier: file:../../tarballs/react-native-web-0.21.2-c25db77d.tgz
-        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
 
   apps/native-component-list:
     dependencies:
@@ -1266,7 +1267,7 @@ importers:
         version: 1.22.4(react-native-reanimated@4.6.0(patch_hash=0f735c4b33f9af576a7af1a9cffcea5220cbbc671ec2f158848cdd086d73d5e4)(react-native-worklets@0.12.2(patch_hash=0e7ca08ddb565252ea4479e4bb493c5c09756297ba0ec8845126edcfcc981b28)(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
       react-native-maps:
         specifier: 1.29.0
-        version: 1.29.0(react-native-web@file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
+        version: 1.29.0(react-native-web@file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
       react-native-pager-view:
         specifier: 9.0.4
         version: 9.0.4(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
@@ -1287,7 +1288,7 @@ importers:
         version: 5.1.1(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
       react-native-web:
         specifier: file:../../tarballs/react-native-web-0.21.2-c25db77d.tgz
-        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       react-native-webview:
         specifier: 14.0.1
         version: 14.0.1(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
@@ -1654,7 +1655,7 @@ importers:
         version: 4.3.0(react-native-pager-view@8.0.2(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@types/react@19.3.0)(react@19.3.0))(react@19.3.0))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
       react-native-web:
         specifier: file:../../tarballs/react-native-web-0.21.2-c25db77d.tgz
-        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       react-native-webview:
         specifier: 14.0.1
         version: 14.0.1(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
@@ -2804,7 +2805,7 @@ importers:
         version: 0.88.0-rc.1(@babel/core@7.29.7)(@types/react@19.3.0)(react@19.3.0)
       react-native-web:
         specifier: file:../../../tarballs/react-native-web-0.21.2-c25db77d.tgz
-        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       rimraf:
         specifier: ^6.1.2
         version: 6.1.3
@@ -3868,7 +3869,7 @@ importers:
         version: 29.7.0
       react-native-web:
         specifier: file:../../tarballs/react-native-web-0.21.2-c25db77d.tgz
-        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       react-native-webview:
         specifier: '*'
         version: 14.0.1(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
@@ -4377,7 +4378,7 @@ importers:
         version: 0.88.0-rc.1(@babel/core@7.29.7)(@types/react@19.3.0)(react@19.3.0)
       react-native-web:
         specifier: file:../../tarballs/react-native-web-0.21.2-c25db77d.tgz
-        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
     devDependencies:
       '@types/jest':
         specifier: ^29.2.1
@@ -4420,7 +4421,7 @@ importers:
         version: 0.88.0-rc.1(@babel/core@7.29.7)(@types/react@19.3.0)(react@19.3.0)
       react-native-web:
         specifier: file:../../tarballs/react-native-web-0.21.2-c25db77d.tgz
-        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
     devDependencies:
       '@testing-library/dom':
         specifier: ^10.4.0
@@ -4849,7 +4850,7 @@ importers:
         version: 4.6.0(patch_hash=0f735c4b33f9af576a7af1a9cffcea5220cbbc671ec2f158848cdd086d73d5e4)(react-native-worklets@0.12.2(patch_hash=0e7ca08ddb565252ea4479e4bb493c5c09756297ba0ec8845126edcfcc981b28)(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
       react-native-web:
         specifier: file:../../tarballs/react-native-web-0.21.2-c25db77d.tgz
-        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
     devDependencies:
       '@types/invariant':
         specifier: ^2.2.33
@@ -4926,7 +4927,7 @@ importers:
         version: 0.88.0-rc.1(@babel/core@7.29.7)(@types/react@19.3.0)(react@19.3.0)
       react-native-web:
         specifier: file:../../tarballs/react-native-web-0.21.2-c25db77d.tgz
-        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       sf-symbols-typescript:
         specifier: ^2.2.0
         version: 2.2.0
@@ -5672,7 +5673,7 @@ importers:
         version: 4.27.0(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
       react-native-web:
         specifier: file:../../tarballs/react-native-web-0.21.2-c25db77d.tgz
-        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       server-only:
         specifier: ^0.0.1
         version: 0.0.1
@@ -6033,7 +6034,7 @@ importers:
         version: 4.27.0(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
       react-native-web:
         specifier: file:../../../tarballs/react-native-web-0.21.2-c25db77d.tgz
-        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       sonner:
         specifier: ^2.0.7
         version: 2.0.7(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -6177,7 +6178,7 @@ importers:
         version: 0.88.0-rc.1(@babel/core@7.29.7)(@types/react@19.3.0)(react@19.3.0)
       react-native-web:
         specifier: file:../../tarballs/react-native-web-0.21.2-c25db77d.tgz
-        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
     devDependencies:
       '@types/jest':
         specifier: ^29.2.1
@@ -6577,7 +6578,7 @@ importers:
         version: 0.88.0-rc.1(@babel/core@7.29.7)(@types/react@19.3.0)(react@19.3.0)
       react-native-web:
         specifier: file:../../tarballs/react-native-web-0.21.2-c25db77d.tgz
-        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        version: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
     devDependencies:
       '@testing-library/dom':
         specifier: ^10.4.0
@@ -14117,7 +14118,6 @@ packages:
 
   react-native-maps@1.29.0:
     resolution: {integrity: sha512-tXyYyyeZgiThHQvr/d22V7MMOxUfxdkXujFkGEuGP6FwBvVew/QmTS8VNiPbPce95uBIqE/SaOjai3Zwndpadg==}
-    version: 1.29.0
     engines: {node: '>= 20.19.4'}
     peerDependencies:
       react: '>= 18.3.1'
@@ -23497,21 +23497,21 @@ snapshots:
       react-native-is-edge-to-edge: 1.3.1(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
       react-native-reanimated: 4.6.0(patch_hash=0f735c4b33f9af576a7af1a9cffcea5220cbbc671ec2f158848cdd086d73d5e4)(react-native-worklets@0.12.2(patch_hash=0e7ca08ddb565252ea4479e4bb493c5c09756297ba0ec8845126edcfcc981b28)(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0)
 
-  react-native-maps@1.29.0(react-native-web@0.21.2(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0):
+  react-native-maps@1.29.0(react-native-web@0.21.2(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0):
     dependencies:
       '@types/geojson': 7946.0.16
       react: 19.3.0
       react-native: 0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0)
     optionalDependencies:
-      react-native-web: 0.21.2(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      react-native-web: 0.21.2(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
 
-  react-native-maps@1.29.0(react-native-web@file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0):
+  react-native-maps@1.29.0(react-native-web@file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0):
     dependencies:
       '@types/geojson': 7946.0.16
       react: 19.3.0
       react-native: 0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0)
     optionalDependencies:
-      react-native-web: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      react-native-web: file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
 
   react-native-pager-view@8.0.2(react-native@0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0))(react@19.3.0):
     dependencies:
@@ -23595,7 +23595,7 @@ snapshots:
       react: 19.3.0
       react-native: 0.88.0-rc.1(@babel/core@7.29.7)(@react-native/metro-config@0.87.1(@babel/core@7.29.7))(@types/react@19.3.0)(react@19.3.0)
 
-  react-native-web@0.21.2(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0):
+  react-native-web@0.21.2(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0):
     dependencies:
       '@babel/runtime': 7.29.7
       '@react-native/normalize-colors': 0.74.89
@@ -23611,7 +23611,7 @@ snapshots:
       - encoding
     optional: true
 
-  react-native-web@file:tarballs/react-native-web-0.21.2-c25db77d.tgz(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0):
+  react-native-web@file:tarballs/react-native-web-0.21.2-c25db77d.tgz(patch_hash=9c3aa738f35f6d744942aef27e04ff73df174545686c04f7a101024a38d38c3a)(encoding@0.1.13)(react-dom@19.3.0(react@19.3.0))(react@19.3.0):
     dependencies:
       '@react-native/normalize-colors': 0.87.1
       fbjs: 3.0.5(encoding@0.1.13)
