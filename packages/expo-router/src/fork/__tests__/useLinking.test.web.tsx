@@ -5,7 +5,6 @@ import { expectCompleteStateToMatch } from '../../__tests__/assertCompleteState'
 import { node } from '../../global-state/__tests__/__fixtures__/routeNode';
 import { completeParsedState } from '../../global-state/createSeededNavigationState';
 import { getRouteInfoFromState } from '../../global-state/getRouteInfoFromState';
-import { RouterRegistryProvider } from '../../global-state/routerRegistry';
 import { getRootStackRouteNames } from '../../global-state/utils';
 import { getStateFromPath } from '../../link/linking';
 import { Screen } from '../../react-navigation/core/Screen';
@@ -87,7 +86,7 @@ function renderHistoryListener({
   const ref = { current: navigation } as unknown as Parameters<typeof useLinking>[0];
 
   function Sample() {
-    useLinking(ref, { prefixes: [], getStateFromPath }, jest.fn());
+    useLinking(ref, { prefixes: [], getStateFromPath });
     return null;
   }
 
@@ -230,7 +229,7 @@ test('keeps the current route group when parsing a popstate path', () => {
   const parsePath = jest.fn(getStateFromPath);
 
   function Sample() {
-    useLinking(ref, { prefixes: [], config, getStateFromPath: parsePath }, jest.fn());
+    useLinking(ref, { prefixes: [], config, getStateFromPath: parsePath });
     return null;
   }
 
@@ -273,11 +272,11 @@ test('parses the initial URL instead of returning existing navigation state', as
   const getStateFromPath = jest.fn(() => ({ routes: [{ name: 'home' }] }));
 
   function Sample() {
-    getInitialState = useLinking(
-      mockNavigationRef,
-      { prefixes: [], getInitialURL: () => 'http://localhost/home', getStateFromPath },
-      jest.fn()
-    ).getInitialState;
+    getInitialState = useLinking(mockNavigationRef, {
+      prefixes: [],
+      getInitialURL: () => 'http://localhost/home',
+      getStateFromPath,
+    }).getInitialState;
     return null;
   }
 
@@ -303,11 +302,11 @@ test('getInitialState is computed once with first-render options', async () => {
   let getInitialState: ReturnType<typeof useLinking>['getInitialState'] | undefined;
 
   function Sample({ getStateFromPath }: { getStateFromPath: typeof firstGetStateFromPath }) {
-    getInitialState = useLinking(
-      mockNavigationRef,
-      { prefixes: [], getInitialURL: () => 'http://localhost/home', getStateFromPath },
-      jest.fn()
-    ).getInitialState;
+    getInitialState = useLinking(mockNavigationRef, {
+      prefixes: [],
+      getInitialURL: () => 'http://localhost/home',
+      getStateFromPath,
+    }).getInitialState;
     return null;
   }
 
@@ -344,26 +343,23 @@ test('does not add browser history when preloading a stack route', async () => {
   const onStateChange = jest.fn();
 
   render(
-    <RouterRegistryProvider>
-      <NavigationContainer
-        ref={ref}
-        documentTitle={{ enabled: false }}
-        onStateChange={onStateChange}
-        linking={{
-          prefixes: [],
-          config: { screens: { home: 'home', details: 'details' } },
-          getInitialURL: () => 'http://localhost/home',
-          getStateFromPath: () => ({ routes: [{ name: 'home' }] }),
-        }}>
-        <Stack>
-          <Screen name="home" component={EmptyScreen} />
-          <Screen name="details" component={EmptyScreen} />
-        </Stack>
-      </NavigationContainer>
-    </RouterRegistryProvider>
+    <NavigationContainer
+      ref={ref}
+      linking={{
+        prefixes: [],
+        config: { screens: { home: 'home', details: 'details' } },
+        getInitialURL: () => 'http://localhost/home',
+        getStateFromPath: () => ({ routes: [{ name: 'home' }] }),
+      }}>
+      <Stack>
+        <Screen name="home" component={EmptyScreen} />
+        <Screen name="details" component={EmptyScreen} />
+      </Stack>
+    </NavigationContainer>
   );
 
   await waitFor(() => expect(ref.current).not.toBeNull());
+  ref.current?.addListener('state', onStateChange);
   history.push.mockClear();
   history.replace.mockClear();
 
